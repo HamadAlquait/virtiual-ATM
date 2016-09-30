@@ -128,6 +128,7 @@ public class BankAccount extends Account{
 			case 1:
 				accountNo=1002;
                                                         System.out.println("Account number 1002");
+                                                        System.out.println("Pleaser memorize this in order to access your account later.");
 
 				break;
 			case 2:
