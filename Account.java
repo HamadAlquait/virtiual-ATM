@@ -165,7 +165,7 @@ public class Account
 	// The previous second date is passed to the first date to keep track of
 	// time.
 	public int getDate2() throws IOException {
-		System.out.print("Enter todays date(mm/dd/yyyy): ");
+		System.out.print("Enter todays date in this format (mm/dd/yyyy): ");
 		BufferedReader br;
 		br = new BufferedReader(new InputStreamReader(System.in));
 		String inputText = br.readLine();
@@ -176,7 +176,7 @@ public class Account
 		date2.setTime(date);
 		seconddate = date2.get(date2.DAY_OF_YEAR);
 		if (firstdate > seconddate) {
-			System.out.println("You must enter a future date.");
+			System.out.println("You must enter a valid date.");
 			getDate2();
 		}
 		return seconddate;
