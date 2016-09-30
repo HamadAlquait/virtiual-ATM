@@ -39,7 +39,7 @@ public class BankAccount extends Account{
 		System.out.println();
 		System.out.println();
 		System.out.println("*********************************");
-		System.out.println("*    WELCOME TO RIPUOFF BANK    *");
+		System.out.println("*    WELCOME TO   Hamad BANK    *");
 		System.out.println("*                               *");
 		System.out.println("*     Come in and check out     *");
 		System.out.println("*          our low 30%          *");
@@ -47,9 +47,10 @@ public class BankAccount extends Account{
 		System.out.println("*                               *");
 		System.out.println("*********************************");
 		System.out.println();
+		System.out.println("This program only allows for three accounts to be made");
 		System.out.println("Please enter a choice:");
 		System.out.println("1.Open existing account(o)\t 2.Create Account (c)\t 3.Exit Program(e) \nChoose:");
-                System.out.println("This program only allows for three accounts to be saved, Account numbers are 1001,1002,1003");
+                System.out.println("This program only allows for three accounts to be made");
 
 		br = new BufferedReader(new InputStreamReader(System.in));
 		input = br.readLine();
@@ -82,7 +83,7 @@ public class BankAccount extends Account{
                 case 'e':
                     System.out.println("Good bye!");
                     System.exit(0);
-                      case '3':
+                case '3':
                     System.out.println("Good bye!");
                     System.exit(0);
 		}
