@@ -48,7 +48,9 @@ public class BankAccount extends Account{
 		System.out.println("*********************************");
 		System.out.println();
 		System.out.println("Please enter a choice:");
-		System.out.println("1.Open existing account(o)\t 2.Create Account (c)\nChoose:");
+		System.out.println("1.Open existing account(o)\t 2.Create Account (c)\t 3.Exit Program(e) \nChoose:");
+                System.out.println("This program only allows for three accounts to be saved, Account numbers are 1001,1002,1003");
+
 		br = new BufferedReader(new InputStreamReader(System.in));
 		input = br.readLine();
 		mychar = input.charAt (index);
@@ -61,6 +63,10 @@ public class BankAccount extends Account{
 			System.out.println("Open existing account:\n");
 			openExistAccount();
 			break;
+                        case '1':
+			System.out.println("Open existing account:\n");
+			openExistAccount();
+			break;
 		case 'c':
 			System.out.println("Create Account:\n");
 			createAccount();
@@ -69,6 +75,16 @@ public class BankAccount extends Account{
 			System.out.println("Create Account:\n");
 			createAccount();
 			break;
+                        case '2':
+			System.out.println("Create Account:\n");
+			createAccount();
+			break;
+                case 'e':
+                    System.out.println("Good bye!");
+                    System.exit(0);
+                      case '3':
+                    System.out.println("Good bye!");
+                    System.exit(0);
 		}
 
 
@@ -105,16 +121,21 @@ public class BankAccount extends Account{
 			switch(count){
 			case 0:
 				accountNo=1001;
+                        System.out.println("Account number 1001");
 
 				break;
 			case 1:
 				accountNo=1002;
+                                                        System.out.println("Account number 1002");
+
 				break;
 			case 2:
 				accountNo=1003;
+                                                        System.out.println("Account number 1003");
+
 				break;
 			default:
-				System.out.println("Exceeded the maxium accounts");
+				System.out.println("Exceeded the maxium number of accounts");
 				System.out.println("Exiting from the application");
 				System.exit(0);
 
